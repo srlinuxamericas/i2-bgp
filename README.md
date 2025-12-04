@@ -1,4 +1,4 @@
-# Welcome to the BGP for DC Workshop at NANOG 95
+# Welcome to the BGP for DC Workshop at Internet2 TECHEX 2025
 
 This README is your starting point into the hands on section.
 
