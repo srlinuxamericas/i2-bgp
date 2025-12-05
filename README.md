@@ -30,10 +30,10 @@ A Nokia team member will provide you with a card that contains:
 
 ---
 <div align=center>
-<a href="https://codespaces.new/srlinuxamericas/n95-bgp?quickstart=1">
+<a href="https://codespaces.new/srlinuxamericas/i2-bgp?quickstart=1">
 <img src="https://gitlab.com/rdodin/pics/-/wikis/uploads/d78a6f9f6869b3ac3c286928dd52fa08/run_in_codespaces-v1.svg?sanitize=true" style="width:50%"/></a>
 
-**[Run](https://codespaces.new/srlinuxamericas/n95-bgp?quickstart=1) this lab in GitHub Codespaces for free**.  
+**[Run](https://codespaces.new/srlinuxamericas/i2-bgp?quickstart=1) this lab in GitHub Codespaces for free**.  
 [Learn more](https://containerlab.dev/manual/codespaces/) about Containerlab for Codespaces.
 
 </div>
@@ -73,19 +73,19 @@ Logout and login for the sudo privileges to take effect.
 Use the below command to clone this repo to your VM.
 
 ```bash
-sudo git clone https://github.com/srlinuxamericas/n95-bgp.git
+sudo git clone https://github.com/srlinuxamericas/i2-bgp.git
 ```
 
 Verify that the git repo files are available on your VM.
 
 ```bash
-ls -lrt n95-bgp
+ls -lrt i2-bgp
 ```
 
 Expected output on VM:
 
 ```bash
-nokiauser@2:~$ ls -lrt n95-bgp
+nokiauser@2:~$ ls -lrt i2-bgp
 total 616
 -rw-r--r-- 1 root root 105513 Oct 27 22:28 README.md
 drwxr-xr-x 2 root root   4096 Oct 27 22:28 configs
@@ -98,7 +98,7 @@ drwxr-xr-x 4 root root   4096 Oct 27 22:28 cli
 To deploy the lab, run the following:
 
 ```bash
-cd n95-bgp
+cd i2-bgp
 sudo clab deploy -t srl-bgp.clab.yml
 ```
 
@@ -173,7 +173,7 @@ Here's a summary of what is included in the startup config:
 - Configure default Network Instance (VRF) and add system loopback and Leaf/Client interfaces to this VRF
 - Configure IPs and static routes on Clients
 
-Check the [startup config](n95-bgp/configs/fabric/startup) files to see how these objects are configured in SR Linux.
+Check the [startup config](i2-bgp/configs/fabric/startup) files to see how these objects are configured in SR Linux.
 
 To view Interface status on SR Linux use:
 
