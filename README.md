@@ -1537,9 +1537,9 @@ Origin codes: i=IGP, e=EGP, ?=incomplete
 
 We see that both routes received from spine1 are not `Best Used` and we also see the local preference value of 0 assigned to these routes.
 
-Delete import policy from leaf1 before proceeding to the next step to return to status quo with ECMP.
+Delete import policy from both leaf1 and leaf2 before proceeding to the next step to return to status quo with ECMP.
 
-On leaf1:
+Copy and paste on leaf1 and leaf2:
 
 ```srl
 delete /network-instance default protocols bgp afi-safi ipv4-unicast import-policy
